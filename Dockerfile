@@ -15,7 +15,7 @@ RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-s
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 RUN apt-get install -y oracle-java6-installer
 
-# install Java
+# install maven
 RUN apt-get install -y maven
 
 # confirm git is installed
@@ -30,3 +30,5 @@ WORKDIR /local/git
 
 # run terminal
 CMD ["/bin/bash"]
+
+<a href="http://blog.jamesdbloom.com">James D Bloom</a>
