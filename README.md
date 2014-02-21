@@ -19,14 +19,14 @@ This **Dockerfile** has been published as a [trusted build](https://index.docker
    (alternatively, you can build an image from Dockerfile: `docker build -t="jamesdbloom/docker_java6_maven" github.com/jamesdbloom/docker_java6_maven`)
 
 
-### Usage
+### Usage (two options)
 
-#### Run container and clone git repo into container
+#### 1. Run container and clone git repo into container
 
     docker run -i jamesdbloom/docker_java7_maven
 
     git clone <your repo url>
 
-#### Run container with git repo attached container (from host OS)
+#### 2. Run container with git repo attached container (from host OS)
 
     docker run -i -v <your git repo directory>:/volume/git jamesdbloom/docker_java7_maven
