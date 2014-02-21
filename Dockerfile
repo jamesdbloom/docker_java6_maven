@@ -7,6 +7,9 @@
 # pull base image.
 FROM dockerfile/ubuntu
 
+# maintainer details
+MAINTAINER James Bloom "jamesdbloom@gmail.com"
+
 # install Java
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:webupd8team/java
@@ -30,5 +33,3 @@ WORKDIR /local/git
 
 # run terminal
 CMD ["/bin/bash"]
-
-<a href="http://blog.jamesdbloom.com">James D Bloom</a>
