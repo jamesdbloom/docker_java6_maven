@@ -31,4 +31,4 @@ This **Dockerfile** has been published as a [trusted build](https://index.docker
 
     docker run -i -t -name docker_java6_maven -rm -v <your git repo directory>:/volume/git jamesdbloom/docker_java6_maven
     
-<a href="http://blog.jamesdbloom.com">James D Bloom</a>
+[James D Bloom](http://blog.jamesdbloom.com)
