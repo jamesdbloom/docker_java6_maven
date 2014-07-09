@@ -2,7 +2,7 @@
 
 This repository contains a **Dockerfile** to create a docker container with Java 1.6, Maven 3.1.1 and git
 
-This **Dockerfile** has been published as a [trusted build](https://index.docker.io/u/jamesdbloom/docker-java6-maven/) to the public [Docker Registry](https://index.docker.io/).
+This **Dockerfile** has been published as a [trusted build](https://hub.docker.com/u/jamesdbloom/docker-java6-maven/) to the public [Docker Registry](https://hub.docker.com/).
 
 
 ### Dependencies
@@ -12,18 +12,18 @@ This **Dockerfile** has been published as a [trusted build](https://index.docker
 
 ### Installation
 
-1. Install [Docker](https://www.docker.io/).
+1. Install [Docker](https://www.docker.com/).
 
-2. Download [trusted build](https://index.docker.io/u/jamesdbloom/docker-java6-maven/) from public [Docker Registry](https://index.docker.io/): `docker pull jamesdbloom/docker_java6_maven`
+2. Download [trusted build](https://hub.docker.io/u/jamesdbloom/docker-java6-maven/) from public [Docker Registry](https://index.docker.com/): `docker pull jamesdbloom/docker-java6-maven`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="jamesdbloom/docker_java6_maven" github.com/jamesdbloom/docker_java6_maven`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="jamesdbloom/docker-java6-maven" github.com/jamesdbloom/docker_java6_maven`)
 
 
 ### Usage (two options)
 
 #### 1. Run container and clone git repo into container
 
-    docker run -i -t -name docker_java6_maven -rm jamesdbloom/docker_java6_maven
+    docker run -i -t -name docker-java6-maven -rm jamesdbloom/docker-java6-maven
 
     git clone <your repo url>
 
